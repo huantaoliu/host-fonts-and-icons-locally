@@ -52,19 +52,8 @@ module.exports = {
         ],
       },
       {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader',
-        options: {
-          limit: 1032000,
-          mimetype: 'application/font-woff',
-        },
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-        loader: 'file-loader',
-        options: {
-          esModule: false,
-        },
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
       },
     ],
   },

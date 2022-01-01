@@ -6,7 +6,7 @@ const basePath = './';
 module.exports = {
   entry: {
     'tokyo-zoo': basePath + 'src/fonts/tokyo-zoo/tokyo-zoo.scss',
-    fa: basePath + 'src/icon/my-fontawesome.scss',
+    fa: basePath + 'src/fonts/icon/my-fontawesome.scss',
   },
   mode: 'production',
   resolve: {
